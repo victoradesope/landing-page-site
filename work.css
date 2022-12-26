@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: none;
+}
+/* this is the header*/
+.header{
+  padding: 20px;
+    text-align: center;
+    height: 200px;
+ background-color: antiquewhite;
+}
+.headiv{
+    float: left;
+    width: 33.33%;
+}
+.headiv i{
+  padding: 8px;
+}
+.header h1{
+    font-family: cursive;
+    font-size: 50px;
+    color: red;
+}
+/* list style */
+ul.ullist{
+    list-style-type: none;
+    background-color: grey ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.list{
+    float: left;
+}
+.list .link{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+a.right{
+    background-color: chartreuse;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+.list a.link:hover{
+    background-color: black;
+    color:white;
+}
+
+/* left div 'HOUSE CATEGORY'*/
+.house{
+   list-style-type: none;
+}
+.house li p a{
+   font-size: 18px;
+}
+.house li p a:hover{
+   font-size: 20px;
+   color: blue;
+   cursor: pointer;
+}
+
+/* Clear floats after the columns */
+.section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* body section with div */  
+
+ .side{
+   float: left;
+   padding: 10px;
+    
+ }
+.left.side{
+    width: 25%;
+ }
+ .centre.side{
+    width: 50%;
+ }
+ .right.side{
+    width: 25%;
+    
+ }
+ 
+ div.gallery{
+   float: left;
+   padding: 5px;
+   width: 25%;
+ }
+ li.dropdown{
+    display: block;
+    width: 200px;
+ }
+ .dropdown:hover .right{
+    background-color: aqua;
+ }
+ .dropdowncont{
+    display: none;
+    position: absolute;
+    background-color: blanchedalmond;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+ }
+ .dropdowncont a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+ }
+ .dropdowncont a:hover{
+    background-color: darkgray;
+ }
+ .dropdown:hover .dropdowncont{
+    display: block;
+ }
+ /*  form */
+ .searchbar{
+   width: 130px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: white;
+   padding: 12px 20px 12px 40px;
+   transition: width 0.4s ease-in-out;
+   background-image: 'photo1.jpg';
+ }
+ 
+ .searchbar:focus{
+   width: 100%;
+ }
+/* form css*/
+ input[type=text], input[type=email], input[type=password], select, textarea{
+   width: 100%;
+   padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+ }
+ label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+ }
+
+ input[type=submit]{
+   background-color: #04AA6D;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   float: right;
+   margin-top: 10px;
+ }
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+ .container {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+ }
+ .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+ }
+ 
+ .col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+ }
+ 
+
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ /* End of form css*/
+.animate{
+  height: 200px;
+  width: 200px;
+}
+
+ .animation{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+ }
+ @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+ }
+ .galleryls{
+  margin-top: 6px;
+  border-bottom: 1px solid red;
+ }
+ .vertical{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ccc;
+  
+ }
+ .vertical li{
+  text-align: center;
+  border-bottom: 1px solid orange;
+ }
+ .vertical li a{
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: large;
+ }
+ .vertical li a:hover{
+  color: white;
+  background-color: rgb(82, 71, 71);
+  cursor: pointer;
+  border-bottom: 2px solid red;
+ }
+ /* button at the right hand side*/
+ .button1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button1:hover {background-color: #3e8e41}
+
+.button1:active {
+  background-color: #3e8e41;
+
+  transform: translateY(14px);
+}
+  .divele p{
+color: red;
+font-size: large;
+  }
+  
+  .container1 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 50%;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container1:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container1:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    margin-top: 6px;
+    height: 200px;
+    color: white;
+  }
+  .footdiv{
+float: left;
+width: 33.33%;
+  }
+  /*responsive list*/
+  @media screen and (max-width:700px){
+    ul.ullist li.dropdown, ul.ullist li{
+      float: none;
+      width: 100%;
+    }
+    div.dropdowncont{
+      width: 50%;
+    }
+  
+  }
+  @media screen and (max-width:700px){
+    .right.side, .centre.side, .left.side{
+      width: 100%;
+      float: none;
+    }
+  }
+
+  @media screen and (max-width:700px){
+    .headiv{
+      width: 100%;
+      float: none;
+    color: white;
+    }
+  }
+  @media screen and (max-width:700px){
+    .headiv h1, .headiv i, .headiv a i{
+      font-size: 20px;
+      color: black;
+    }
+   
+  }
+
+  @media screen and (max-width:700px){
+    div.gallery{
+      width: 50%;
+      
+    }
+  }
+  @media screen and (max-width:700px){
+    .image{
+      border-radius: 0;
+      
+    }
+  }
+  @media screen and (max-width:700px){
+    .footdiv{
+      width: 100%;
+      float: none;
+    
+    }
+  }
+  @media screen and (max-width:700px){
+    .house li, .hc{
+      text-align: center;
+    
+    }
+  }
+
+  @media screen and (max-width:700px){
+    .col-25, .col-75, input[type=submit]{
+      width: 100%;
+      margin-top: 0;
+      
+    }
+  }
+
+  
+
